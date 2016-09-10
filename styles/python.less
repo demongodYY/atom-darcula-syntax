@@ -1,45 +1,45 @@
 .python {
-    
-    &.inherited-class.entity.other,
+
+    &.entity,
+    &.storage,
+    &.keyword.control {
+      font-weight: bold;
+    }
+
+    // and
     &.keyword.operator.logical {
-        color: @orange;
-        font-weight: bold;
+      color: @orange;
+      font-weight: bold;
     }
 
-    &.class.entity.name.type,
-    &.function.entity.name {
-        color: @syntax-text-color;
-        font-weight: bold;
-        text-decoration: none;
-    }
-
+    // __init__
     &.function.magic {
         color: @purple;
         font-weight: normal;
     }
 
+    // super int range
     &.function.builtin {
         color: @very-light-purple;
-        font-weight: normal;
     }
 
-    &.function.parameter.variable {
-        font-weight: normal;
-    }
-
-    &.string {
-        color: @green;
-    }
-
-    &.numeric.constant {
+  
+    //
+    // &.string {
+    //     color: @green;
+    // }
+    //
+    &.constant.numeric {
         color: @cyan;
     }
-
+    //
     &.language {
+        // self
         &.variable.self {
             color: @light-purple;
         }
 
+        // None
         &.constant {
             font-weight: bold;
         }
@@ -49,10 +49,6 @@
         &.definition {
             &.string {
                 color: @green;
-            }
-
-            &.comment {
-                color: @gray;
             }
         }
     }
