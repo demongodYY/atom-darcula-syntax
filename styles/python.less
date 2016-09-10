@@ -1,0 +1,59 @@
+.python {
+    
+    &.inherited-class.entity.other,
+    &.keyword.operator.logical {
+        color: @orange;
+        font-weight: bold;
+    }
+
+    &.class.entity.name.type,
+    &.function.entity.name {
+        color: @syntax-text-color;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    &.function.magic {
+        color: @purple;
+        font-weight: normal;
+    }
+
+    &.function.builtin {
+        color: @very-light-purple;
+        font-weight: normal;
+    }
+
+    &.function.parameter.variable {
+        font-weight: normal;
+    }
+
+    &.string {
+        color: @green;
+    }
+
+    &.numeric.constant {
+        color: @cyan;
+    }
+
+    &.language {
+        &.variable.self {
+            color: @light-purple;
+        }
+
+        &.constant {
+            font-weight: bold;
+        }
+    }
+
+    &.punctuation {
+        &.definition {
+            &.string {
+                color: @green;
+            }
+
+            &.comment {
+                color: @gray;
+            }
+        }
+    }
+}
